@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject player;
 
    
+   
 
     public float health = 100f;
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
         {
             player.GetComponent<PlayerMovementScript>().enabled = false;
            
+
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }

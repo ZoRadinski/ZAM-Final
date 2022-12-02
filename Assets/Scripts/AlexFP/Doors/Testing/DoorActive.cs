@@ -14,7 +14,7 @@ public class DoorActive : MonoBehaviour
         RaycastHit hit;
         active = Physics.Raycast(cam.position, cam.TransformDirection(Vector3.forward), out hit, playerActivateDistance);
     
-        if(Input.GetKeyDown(KeyCode.E) && active == true)
+        if(Input.GetButtonDown("Interact") && active == true)
         {
             if(hit.transform.GetComponent<Animator>() != null)
             {

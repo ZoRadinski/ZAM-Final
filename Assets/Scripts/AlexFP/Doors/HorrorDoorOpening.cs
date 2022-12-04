@@ -5,13 +5,27 @@ using UnityEngine;
 public class HorrorDoorOpening : MonoBehaviour
 {
     public Animator door;
-    public GameObject openText;
+    public GameObject lockedText;
+    public GameObject UnlockedText;
+    public GameObject KeyInventory;
 
-    public bool inReach;
+    int count = 1;
+
+    private bool inReach;
+    private bool unlocked;
+    private bool locked;
+    private bool hasKey;
+    private bool doorClosed;
+    private bool doorOpen;
 
     void Start()
     {
         inReach = false;
+        hasKey = false;
+        unlocked = false;
+        locked = true;
+        doorClosed = true;
+        doorOpen = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -19,38 +33,48 @@ public class HorrorDoorOpening : MonoBehaviour
         if (other.gameObject.tag == "Reach")
         {
             inReach = true;
-            openText.SetActive(true);
+            if(locked == true)
+            {
+                lockedText.SetActive(true);
+            }
+            else if (hasKey == true)
+            {
+                UnlockedText.SetActive(true);
+            }
+
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
-        {
-            inReach = false;
-            openText.SetActive(false);
-        }
+        inReach = false;
+        lockedText.SetActive(false);
+        UnlockedText.SetActive(false);
     }
 
     void Update()
     {
-
-        if (inReach == true && Input.GetButtonDown("Interact"))
+        if (KeyInventory.activeInHierarchy)
         {
-            GetComponent<Animator>().SetTrigger("Activate");
+            locked = false;
+            hasKey = true;
         }
+        else
+        {
+            hasKey = false;
+        }
+        
+        if (hasKey == true && inReach == true && Input.GetButtonDown("Interact"))
+        {
+            unlocked = true;
+            DoorOpens();
+            doorOpen = true;
+            doorClosed = false;
+        }   
     }
 
     void DoorOpens()
     {
-        door.SetBool("Open", true);
-        door.SetBool("Closed", false);
-
-    }
-
-    void DoorCloses()
-    {
-        door.SetBool("Open", false);
-        door.SetBool("Closed", true);
+        GetComponent<Animator>().SetTrigger("Activate");
     }
 }

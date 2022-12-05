@@ -4030,6 +4030,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8623047630517322240, guid: 0a1d8b0ec72df924faa2fe6dfd58f7da, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 623c35d2ac1950e45a615ab92231aa67, type: 2}
     - target: {fileID: -2513430485362492190, guid: 0a1d8b0ec72df924faa2fe6dfd58f7da, type: 3}
       propertyPath: m_Name
       value: Dimension
@@ -4038,6 +4042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyPad
       objectReference: {fileID: 0}
+    - target: {fileID: 4254970262513149769, guid: 0a1d8b0ec72df924faa2fe6dfd58f7da, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 53843d05e46c71149927786a9271bca6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a1d8b0ec72df924faa2fe6dfd58f7da, type: 3}
 --- !u!1 &7114134254570499743 stripped

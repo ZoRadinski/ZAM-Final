@@ -9,23 +9,16 @@ public class HorrorDoorOpening : MonoBehaviour
     public GameObject UnlockedText;
     public GameObject KeyInventory;
 
-    int count = 1;
-
     private bool inReach;
     private bool unlocked;
     private bool locked;
     private bool hasKey;
-    private bool doorClosed;
-    private bool doorOpen;
 
     void Start()
     {
         inReach = false;
         hasKey = false;
-        unlocked = false;
         locked = true;
-        doorClosed = true;
-        doorOpen = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -33,7 +26,7 @@ public class HorrorDoorOpening : MonoBehaviour
         if (other.gameObject.tag == "Reach")
         {
             inReach = true;
-            if(locked == true)
+            if (locked == true)
             {
                 lockedText.SetActive(true);
             }
@@ -66,10 +59,7 @@ public class HorrorDoorOpening : MonoBehaviour
         
         if (hasKey == true && inReach == true && Input.GetButtonDown("Interact"))
         {
-            unlocked = true;
             DoorOpens();
-            doorOpen = true;
-            doorClosed = false;
         }   
     }
 

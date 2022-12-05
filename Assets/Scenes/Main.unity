@@ -28037,7 +28037,7 @@ MonoBehaviour:
   gunScript: {fileID: 1813035327}
   equipped: 0
   pickUpText: {fileID: 460874744}
-  ammotext: {fileID: 732979312}
+  ammotext: {fileID: 460874746}
 --- !u!1 &1339895983
 GameObject:
   m_ObjectHideFlags: 0

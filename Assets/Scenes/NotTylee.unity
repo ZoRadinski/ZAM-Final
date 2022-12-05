@@ -5509,6 +5509,29 @@ MonoBehaviour:
   equipped: 0
   pickUpText: {fileID: 804169893}
   ammotext: {fileID: 1792794317}
+--- !u!114 &1215777352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215777345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a0d30e1e6b0ccd448566690d41b222b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipPosition: {fileID: 874412967}
+  distance: 4
+  currentWeapon: {fileID: 0}
+  wp: {fileID: 0}
+  cam: {fileID: 1721439722}
+  canGrab: 0
+  gunScript: {fileID: 0}
+  gunSystem: {fileID: 1215777348}
+  equipped: 0
+  pickUpText: {fileID: 804169893}
+  ammotext: {fileID: 172287615}
 --- !u!1 &1254315548
 GameObject:
   m_ObjectHideFlags: 0
@@ -8087,14 +8110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9868b66b1edd4548b33daf5a17a2e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1215777345}
-  keypadOB: {fileID: 1769021044}
-  hud: {fileID: 262251084}
-  animateOB: {fileID: 316381909}
-  ANI: {fileID: 316381912}
-  textOB: {fileID: 124271342}
-  answer: 12345
-  animate: 0
 --- !u!1 &1787712225
 GameObject:
   m_ObjectHideFlags: 0

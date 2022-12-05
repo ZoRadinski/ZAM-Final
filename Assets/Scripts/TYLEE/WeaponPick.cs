@@ -15,6 +15,8 @@ public class WeaponPick : MonoBehaviour
     
 
     public GunSystem gunScript;
+
+    
     
 
 
@@ -40,8 +42,8 @@ public class WeaponPick : MonoBehaviour
         if (equipped)
         {
             gunScript.enabled = true;
-            
            
+
 
 
         }
@@ -81,6 +83,7 @@ public class WeaponPick : MonoBehaviour
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, distance))
         {
             if (hit.transform.tag == "CanGrab")
+                
             {
                 pickUpText.SetActive(true);
                 Debug.Log("I can grab it");
@@ -93,13 +96,15 @@ public class WeaponPick : MonoBehaviour
             canGrab = false;
             pickUpText.SetActive(false);
         }
+
+       
     }
 
     private void PickUp()
     {
         equipped = true;
         gunScript.enabled = true;
-        
+       
 
         ammotext.enabled = true;
         currentWeapon = wp;

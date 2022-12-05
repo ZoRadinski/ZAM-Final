@@ -11,6 +11,7 @@ public class Keypad : MonoBehaviour
     public GameObject keyPadOB;
     public GameObject canvas;
     public GameObject inventory;
+    public GameObject Cam;
 
     public GameObject animatOB;
     public Animator ani;
@@ -61,6 +62,7 @@ public class Keypad : MonoBehaviour
         player.GetComponent<CharacterController>().enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
+        Cam.GetComponent<MouseLook>().enabled = true;
     }
 
     public void Update()
@@ -77,6 +79,7 @@ public class Keypad : MonoBehaviour
             player.GetComponent<CharacterController>().enabled = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            Cam.GetComponent<MouseLook>().enabled = false;
         }
     }
 }

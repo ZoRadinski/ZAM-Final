@@ -11,6 +11,8 @@ public class HealthPickUp : MonoBehaviour
     public float addHealth = 50f;
     private float currentHealth;
 
+    public GameObject screenFX;
+
    
 
     public bool inReach;
@@ -36,11 +38,12 @@ public class HealthPickUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         currentHealth = player.GetComponent<PlayerHealth>().health;
         cannotPickUpText.SetActive(false);
         pickUpText.SetActive(false);
 
-       
+        screenFX.SetActive(false);
 
         inReach = false;
     }
@@ -52,7 +55,7 @@ public class HealthPickUp : MonoBehaviour
         {
             inReach = false;
             player.GetComponent<PlayerHealth>().health += addHealth;
-           
+           screenFX.SetActive(true);
             pickUp08.GetComponent<BoxCollider>().enabled = false;
             pickUp08.GetComponent<MeshRenderer>().enabled = false;
             pickUpText.SetActive(false);
@@ -71,7 +74,7 @@ public class HealthPickUp : MonoBehaviour
         IEnumerator TurnScreenFXOFF()
         {
             yield return new WaitForSeconds(1.25f);
-            
+            screenFX.SetActive(false);
             pickUp08.SetActive(false);
         }
     }

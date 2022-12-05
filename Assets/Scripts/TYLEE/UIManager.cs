@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject player;
 
+    
+
     private void OnEnable()
     {
         PlayerHealth.OnPlayerDeath += EnableGameOverMenu;

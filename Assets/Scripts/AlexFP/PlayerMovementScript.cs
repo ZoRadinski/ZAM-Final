@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovementScript : MonoBehaviour
 {
     public CharacterController controller;
@@ -16,6 +17,7 @@ public class PlayerMovementScript : MonoBehaviour
     public bool isGrounded = false;
 
     Vector3 velocity;
+
    
 
     // Update is called once per frame
@@ -47,10 +49,13 @@ public class PlayerMovementScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+       
         isGrounded = true;
     }
     private void OnCollisionExit(Collision collision)
     {
         isGrounded = false;
     }
+
+   
 }

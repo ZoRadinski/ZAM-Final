@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerHealth : MonoBehaviour
 {
-    
+    public static event Action OnPlayerDeath;
+
     public GameObject player;
 
    
@@ -27,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
 
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            OnPlayerDeath?.Invoke();
         }
         if (health > 100)
         {

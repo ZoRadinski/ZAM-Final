@@ -30,7 +30,7 @@ public class HealthPickUp : MonoBehaviour
         {
             inReach = false;
             pickUpText.SetActive(false);
-            cannotPickUpText.SetActive(false);
+            
         }
     }
     // Start is called before the first frame update

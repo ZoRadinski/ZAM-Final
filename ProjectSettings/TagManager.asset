@@ -9,6 +9,8 @@ TagManager:
   - Reach
   - Med
   - Doors
+  - CanGrab
+  - aRGrab
   layers:
   - Default
   - TransparentFX

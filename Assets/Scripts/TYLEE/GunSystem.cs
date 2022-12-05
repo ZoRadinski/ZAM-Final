@@ -27,6 +27,8 @@ public class GunSystem : MonoBehaviour
 
     public TextMeshProUGUI ammoText;                 //Ammo Text
 
+  
+
     private int currentAmmo;                    //The Current Ammo In Weapon
     public int magazineSize = 10;               //How Much Ammo Is In Each Mag
     public int ammoCache = 20;                  //How Much Ammo Is In Your Cache (Storage)
@@ -46,6 +48,8 @@ public class GunSystem : MonoBehaviour
 
     private float nextTimeToFire = 0f;          //How Much Time Must Pass Before Shooting/Meleeing Again
 
+ 
+
 
 
     //Start Function To Ensure Theres No Bugs:
@@ -58,13 +62,13 @@ public class GunSystem : MonoBehaviour
         isreloading = false;
         canShoot = true;
 
-      
+       
 
     }
 
 
 
-    void Update()
+     void Update()
     {
 
         //For Semi Auto Weapons:
@@ -128,12 +132,17 @@ public class GunSystem : MonoBehaviour
 
         //Tells Our Text Object What To Say:
 
+      
+            ammoText.GetComponent<TextMeshProUGUI>().text = magazineSize + " / " + ammoCache; 
+        
+       
 
-        ammoText.GetComponent<TextMeshProUGUI>().text = magazineSize + " / " + ammoCache;
+
 
 
        
-       
+
+
     }
 
 
@@ -193,4 +202,5 @@ public class GunSystem : MonoBehaviour
         canShoot = true;
        
     }
+
 }

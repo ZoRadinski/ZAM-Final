@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Alex.unity
     guid: 8804d29f088280548b0bd688ef13cc50
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Intro.unity
     guid: 71b390fe906812c4f93d8c92eb12b7b3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 6595b399b74a86a4993fd1339f5bdbea
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AfterPlayScene.unity
     guid: 190d2854c7572a04b80f664427cca327
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cinematic.unity
     guid: b388172d9eee28a4c9fa93085c5f1494
   - enabled: 1

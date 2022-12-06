@@ -234,9 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b271ec9c73291b54f86bd948846a6957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keypadOB: {fileID: 1769021044}
-  keypadText: {fileID: 186160826}
-  inReach: 0
 --- !u!1 &55683451
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,11 +875,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165624695}
   m_CullTransparentMesh: 1
---- !u!1 &186160826 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6500707593848620364, guid: 52512feec86cf2f4387bd7812a56ec7d, type: 3}
-  m_PrefabInstance: {fileID: 6500707593765295094}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &218949825
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,6 +4977,10 @@ PrefabInstance:
       propertyPath: ammoText
       value: 
       objectReference: {fileID: 1792794317}
+    - target: {fileID: 8790446377519810238, guid: dd5aa13b06fdaa34390a1388aa3ec69b, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 2971710521946118502, guid: 18b075c1af8e6474eb1323bb8d8df082, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd5aa13b06fdaa34390a1388aa3ec69b, type: 3}
 --- !u!1 &4089831787479720414 stripped

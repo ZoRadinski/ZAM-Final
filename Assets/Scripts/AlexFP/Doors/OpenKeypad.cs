@@ -35,7 +35,7 @@ public class OpenKeypad : MonoBehaviour
     {
         if(Input.GetButtonDown("Interact") && inReach)
         {
-            keypadOb.SetActive(true);
+            keypadOb.SetActive(true);           
         }
     }
 }

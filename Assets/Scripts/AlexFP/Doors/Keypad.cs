@@ -12,6 +12,7 @@ public class Keypad : MonoBehaviour
     public GameObject canvas;
     public GameObject inventory;
     public GameObject Cam;
+    public GameObject TurnOff;
 
     public GameObject animatOB;
     public Animator ani;

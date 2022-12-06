@@ -36,7 +36,8 @@ public class Keypad : MonoBehaviour
 
     public void Number(int number)
     {
-        if(textOB.text != "Wrong")
+        buttonSound.Play();
+        if (textOB.text != "Wrong")
         {
             textOB.text += number.ToString();
         }

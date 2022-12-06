@@ -4581,7 +4581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 142650225999344505, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.41
+      value: -79.27
       objectReference: {fileID: 0}
     - target: {fileID: 142650225999344505, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4589,7 +4589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 142650225999344505, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -33.52
+      value: -36.76
       objectReference: {fileID: 0}
     - target: {fileID: 142650225999344505, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13133,17 +13133,17 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 292c5766cdd6d4e40bea67e4c073383d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.223
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 117
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0
+  Pan2D: -0.23
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -13207,7 +13207,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.57
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -27699,8 +27699,8 @@ MonoBehaviour:
   buttonSound: {fileID: 1932591681}
   correctSound: {fileID: 1230490226}
   wrongSound: {fileID: 1667672848}
-  openGateSound: {fileID: 0}
-  FootstepsSound: {fileID: 0}
+  openGateSound: {fileID: 222110768}
+  FootstepsSound: {fileID: 531926310}
   textOB: {fileID: 1137318032}
   answer: 85641
   animate: 0

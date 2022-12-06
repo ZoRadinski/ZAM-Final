@@ -39,7 +39,7 @@ public class Keypad : MonoBehaviour
     {
         if (textOB.text == answer)
         {
-            textOB.text = "Right";
+            textOB.text = "Right";            
         }
         else
         {
@@ -70,6 +70,8 @@ public class Keypad : MonoBehaviour
         if (textOB.text == "Right")
         {
             ani.GetComponent<Animator>().SetTrigger("Activate");
+            Exit();
+            logic();
         }
 
         if (keyPadOB.activeInHierarchy)
@@ -81,5 +83,10 @@ public class Keypad : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cam.GetComponent<MouseLook>().enabled = false;
         }
+    }
+
+    public void logic()
+    {
+        Destroy(keyPadOB);
     }
 }

@@ -11,6 +11,7 @@ TagManager:
   - Doors
   - CanGrab
   - aRGrab
+  - Headshot
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,8 @@ public class GunSystem : MonoBehaviour
     public float range = 100f;
     public float fireRate = 15;
 
+    public int DE = 100;
+
 
     public GameObject fpsCam;                   //The Point Of Shooting
     public ParticleSystem muzzleFlash;          //Particle Effect For Muzzle Flash
@@ -174,10 +176,14 @@ public class GunSystem : MonoBehaviour
             return;
 
 
+            
+           
 
 
 
         }
+        
+       
     }
 
 

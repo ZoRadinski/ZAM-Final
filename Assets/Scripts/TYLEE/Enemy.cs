@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     
     public Animator animator;
 
+    public GameObject en;
+
    
     public void TakeDamage(int damageAmount)
     {
@@ -16,7 +18,10 @@ public class Enemy : MonoBehaviour
         if (enemyHP <= 0)
         {
             animator.SetTrigger("death");
-            GetComponent<CapsuleCollider>().enabled = false;
+            
+            en.GetComponent<CapsuleCollider>().enabled = false;
+            en.GetComponent<BoxCollider>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             Die();
         }
         else
@@ -24,9 +29,10 @@ public class Enemy : MonoBehaviour
             animator.SetTrigger("damage");
         }
     }
+    
     void Die()
     {
-        
+        Destroy(en, 10);
         Destroy(gameObject, 10);
     }
    

@@ -14,6 +14,8 @@ public class HorrorDoorOpening : MonoBehaviour
     private bool locked;
     private bool hasKey;
 
+    public AudioSource openDoorSound;
+
     void Start()
     {
         inReach = false;
@@ -64,6 +66,7 @@ public class HorrorDoorOpening : MonoBehaviour
 
     void DoorOpens()
     {
+        openDoorSound.Play();
         GetComponent<Animator>().SetTrigger("Activate");
     }
 }

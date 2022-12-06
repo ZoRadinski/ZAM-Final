@@ -23,9 +23,11 @@ public class GunSystem : MonoBehaviour
    
     public float amount;                        //Swaying Min Amount
     public float maxAmount;                     //Swaying Max Amount
-                
 
-           
+    public AudioSource gunshot;
+    public AudioSource relaodSound;
+    public AudioSource noAmmoSound;
+
 
     public TextMeshProUGUI ammoText;                 //Ammo Text
 
@@ -84,22 +86,25 @@ public class GunSystem : MonoBehaviour
             Shoot();
         }
 
-      
 
 
-      
 
-       
+
+
+
 
         //Checks For 0 Ammo:
 
-       
 
-       
+        if (Input.GetButton("Fire1") && magazineSize == 0)
+        {
+            noAmmoSound.Play();
+        }
 
-        
 
-        
+
+
+
 
         //Reloading:
 
@@ -162,7 +167,7 @@ public class GunSystem : MonoBehaviour
 
             muzzleFlash.Play();
            
-
+            gunshot.Play();
            
 
             
@@ -201,7 +206,7 @@ public class GunSystem : MonoBehaviour
 
     IEnumerator ReloadTimer()
     {
-       
+        relaodSound.Play();
         transform.localEulerAngles += reloading;
         yield return new WaitForSeconds(reloadTime);
         isreloading = false;

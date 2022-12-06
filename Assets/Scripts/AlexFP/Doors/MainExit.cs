@@ -18,6 +18,12 @@ public class MainExit : MonoBehaviour
     public GameObject animatOBLeft;
     public Animator aniLeft;
 
+    public AudioSource buttonSound;
+    public AudioSource correctSound;
+    public AudioSource wrongSound;
+    public AudioSource openGateSound;
+    public AudioSource FootstepsSound;
+
     [SerializedField] public TextMeshProUGUI textOB;
 
     public string answer = "12345";
@@ -41,10 +47,12 @@ public class MainExit : MonoBehaviour
     {
         if (textOB.text == answer)
         {
+            correctSound.Play();
             textOB.text = "Right";
         }
         else
         {
+            wrongSound.Play();
             textOB.text = "Wrong";
         }
     }
@@ -52,6 +60,7 @@ public class MainExit : MonoBehaviour
     public void Clear()
     {
         {
+            buttonSound.Play();
             textOB.text = "";
         }
     }
@@ -71,6 +80,7 @@ public class MainExit : MonoBehaviour
     {
         if (textOB.text == "Right")
         {
+            openGateSound.Play();
             aniRight.GetComponent<Animator>().SetTrigger("Activate");
             aniLeft.GetComponent<Animator>().SetTrigger("Activate");
         }

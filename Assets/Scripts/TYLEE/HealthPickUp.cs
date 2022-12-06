@@ -13,7 +13,7 @@ public class HealthPickUp : MonoBehaviour
 
     public GameObject screenFX;
 
-   
+    public AudioSource healthsound;
 
     public bool inReach;
 
@@ -61,7 +61,7 @@ public class HealthPickUp : MonoBehaviour
             pickUpText.SetActive(false);
             StartCoroutine(TurnScreenFXOFF());
         
-
+            healthsound.Play();
 
 
         }

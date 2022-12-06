@@ -7,6 +7,9 @@ public class OpenKeypad : MonoBehaviour
     public GameObject keypadOb;
     public GameObject keypadText;
 
+    public AudioSource keyPadOpenSound;
+    
+
     public bool inReach;
 
     // Start is called before the first frame update
@@ -35,6 +38,8 @@ public class OpenKeypad : MonoBehaviour
     {
         if(Input.GetButtonDown("Interact") && inReach)
         {
+            
+            keyPadOpenSound.Play();
             keypadOb.SetActive(true);           
         }
     }

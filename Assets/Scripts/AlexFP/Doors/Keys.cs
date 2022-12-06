@@ -8,6 +8,8 @@ public class Keys : MonoBehaviour
     public GameObject inventoryOB;
     public GameObject pickUpText;
 
+    public AudioSource keySound;
+
     private bool inReach;
 
     // Start is called before the first frame update
@@ -41,6 +43,7 @@ public class Keys : MonoBehaviour
     {
         if(inReach && Input.GetButtonDown("Interact"))
         {
+            keySound.Play();
             keyOB.SetActive(false);
             inventoryOB.SetActive(true);
             pickUpText.SetActive(false);

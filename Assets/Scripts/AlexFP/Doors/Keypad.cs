@@ -14,6 +14,12 @@ public class Keypad : MonoBehaviour
     public GameObject Cam;
     public GameObject TurnOff;
 
+    public AudioSource buttonSound;
+    public AudioSource correctSound;
+    public AudioSource wrongSound;
+    public AudioSource openGateSound;
+
+
     public GameObject animatOB;
     public Animator ani;
 
@@ -40,10 +46,12 @@ public class Keypad : MonoBehaviour
     {
         if (textOB.text == answer)
         {
+            correctSound.Play();
             textOB.text = "Right";            
         }
         else
         {
+            wrongSound.Play();
             textOB.text = "Wrong";
         }
     }
@@ -51,6 +59,7 @@ public class Keypad : MonoBehaviour
     public void Clear()
     {
         {
+            buttonSound.Play();
             textOB.text = "";
         }
     }
@@ -64,12 +73,14 @@ public class Keypad : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         Cam.GetComponent<MouseLook>().enabled = true;
+        player.GetComponent<FootSteps>().enabled = true;
     }
 
     public void Update()
     {
         if (textOB.text == "Right")
         {
+            openGateSound.Play();
             ani.GetComponent<Animator>().SetTrigger("Activate");
             Exit();
             logic();
@@ -80,6 +91,7 @@ public class Keypad : MonoBehaviour
             canvas.SetActive(false);
             inventory.SetActive(false);
             player.GetComponent<CharacterController>().enabled = false;
+            player.GetComponent<FootSteps>().enabled = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             Cam.GetComponent<MouseLook>().enabled = false;

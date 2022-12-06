@@ -8,7 +8,7 @@ public class Ammo : MonoBehaviour
     public GameObject weaponOB;
     public GameObject pickUpText;
 
-   
+    public AudioSource AmmoSound;
 
     public int ammoBoxAmount;
 
@@ -39,6 +39,7 @@ public class Ammo : MonoBehaviour
     {
         if (inreach && Input.GetKeyDown(KeyCode.E))
         {
+            AmmoSound.Play();
             weaponOB.GetComponent<GunSystem>().ammoCache += ammoBoxAmount;
             pickUpText.SetActive(false);
             theAmmo.SetActive(false);

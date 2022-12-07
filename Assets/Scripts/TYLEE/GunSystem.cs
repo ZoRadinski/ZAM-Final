@@ -34,8 +34,8 @@ public class GunSystem : MonoBehaviour
   
 
     private int currentAmmo;                    //The Current Ammo In Weapon
-    public int magazineSize = 10;               //How Much Ammo Is In Each Mag
-    public int ammoCache = 20;                  //How Much Ammo Is In Your Cache (Storage)
+    public int magazineSize = 5;               //How Much Ammo Is In Each Mag
+    public int ammoCache = 0;                  //How Much Ammo Is In Your Cache (Storage)
     private int maxAmmo;                        //Max Ammo Is Private MaxAmmo = Mag Size
     private int ammoNeeded;                     //Ammo Counter For How Much Is Needed, You Shoot 5 Bullets, You Need 5
 

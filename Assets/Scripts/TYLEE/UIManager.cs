@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject cam;
 
+    public GameObject gunny;
+
     
 
     private void OnEnable()
@@ -25,6 +27,8 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         cam.GetComponent<MouseLook>().enabled = false;
+        gunny.GetComponent<GunSystem>().enabled = false;
+        
     }
     public void RestartLevel()
     {

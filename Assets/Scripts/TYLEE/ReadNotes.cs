@@ -11,6 +11,7 @@ public class ReadNotes : MonoBehaviour
     public GameObject noteUI;
     public GameObject hud;
     public GameObject inv;
+    public GameObject gunny;
 
     public GameObject pickUpText;
 
@@ -67,7 +68,7 @@ public class ReadNotes : MonoBehaviour
             player.GetComponent<FootSteps>().enabled = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-
+            gunny.GetComponent<GunSystem>().enabled = false;
             
         }
 
@@ -83,6 +84,8 @@ public class ReadNotes : MonoBehaviour
         player.GetComponent<PlayerMovementScript>().enabled = true;
         cam.GetComponent<MouseLook>().enabled = true;
         player.GetComponent<FootSteps>().enabled = true;
+        Cursor.visible = false;
+        gunny.GetComponent<GunSystem>().enabled = true;
 
     }
 }

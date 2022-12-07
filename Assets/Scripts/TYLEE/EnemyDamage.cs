@@ -11,6 +11,8 @@ public class EnemyDamage : MonoBehaviour
     public float minDamage;
     public float maxDamage;
 
+    
+
     public GameObject gotHit;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class EnemyDamage : MonoBehaviour
         {
             player.GetComponent<PlayerHealth>().health -= damageRange;
             gotHurt();
+            
         }
     }
 

@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
         {
             player.GetComponent<PlayerMovementScript>().enabled = false;
 
-            hitEffect.GetComponent<Image>().enabled = false;
+            hitEffect.GetComponent<Image>().enabled = true;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             OnPlayerDeath?.Invoke();

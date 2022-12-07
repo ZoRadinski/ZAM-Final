@@ -13,6 +13,7 @@ public class MainExit : MonoBehaviour
     public GameObject inventory;
     public GameObject Cam;
     public GameObject gunny;
+    public GameObject inventoryGun;
 
     public GameObject animatOBRight;
     public Animator aniRight;
@@ -77,7 +78,10 @@ public class MainExit : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         Cam.GetComponent<MouseLook>().enabled = true;
-        gunny.GetComponent<GunSystem>().enabled = true;
+        if (inventoryGun.activeInHierarchy)
+        {
+            gunny.GetComponent<GunSystem>().enabled = true;
+        }
     }
 
     public void Update()

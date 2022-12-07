@@ -11,7 +11,7 @@ public class WeaponPick : MonoBehaviour
     GameObject wp;
     public GameObject cam;
     bool canGrab;
-    
+    public GameObject InventoryGun;
     
 
     public GunSystem gunScript;
@@ -112,7 +112,9 @@ public class WeaponPick : MonoBehaviour
         currentWeapon.transform.parent = equipPosition;
         currentWeapon.transform.localEulerAngles = new Vector3(0f, 100f, 0f);
         currentWeapon.GetComponent<Rigidbody>().isKinematic = true;
-       
+        InventoryGun.SetActive(true);
+
+
     }
 
     private void Drop()
@@ -124,9 +126,9 @@ public class WeaponPick : MonoBehaviour
         currentWeapon.transform.parent = null;
         currentWeapon.GetComponent<Rigidbody>().isKinematic = false;
         currentWeapon = null;
+        InventoryGun.SetActive(false);
 
 
-       
     }
 
 

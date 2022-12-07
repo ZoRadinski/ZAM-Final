@@ -23,6 +23,7 @@ public class HealthPickUp : MonoBehaviour
         {
             inReach = true;
             pickUpText.SetActive(true);
+          
         }
     }
 
@@ -32,7 +33,7 @@ public class HealthPickUp : MonoBehaviour
         {
             inReach = false;
             pickUpText.SetActive(false);
-            
+            cannotPickUpText.SetActive(false);
         }
     }
     // Start is called before the first frame update
@@ -65,7 +66,7 @@ public class HealthPickUp : MonoBehaviour
 
 
         }
-        else if (inReach && Input.GetKeyDown(KeyCode.E) && player.GetComponent<PlayerHealth>().health == 100)
+        if (inReach && Input.GetKeyDown(KeyCode.E) && player.GetComponent<PlayerHealth>().health == 100)
         {
             pickUpText.SetActive(false);
             cannotPickUpText.SetActive(true);

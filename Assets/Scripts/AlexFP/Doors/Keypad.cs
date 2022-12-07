@@ -13,6 +13,7 @@ public class Keypad : MonoBehaviour
     public GameObject inventory;
     public GameObject Cam;
     public GameObject gunny;
+    public GameObject inventoryGun;
 
     public AudioSource buttonSound;
     public AudioSource correctSound;
@@ -75,7 +76,10 @@ public class Keypad : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cam.GetComponent<MouseLook>().enabled = true;
         player.GetComponent<FootSteps>().enabled = true;
-        gunny.GetComponent<GunSystem>().enabled = true;
+        if (inventoryGun.activeInHierarchy)
+        {
+            gunny.GetComponent<GunSystem>().enabled = true;
+        }
     }
 
     public void Update()

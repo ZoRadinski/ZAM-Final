@@ -12,6 +12,7 @@ public class ReadNotes : MonoBehaviour
     public GameObject hud;
     public GameObject inv;
     public GameObject gunny;
+    public GameObject inventoryGun;
 
     public GameObject pickUpText;
 
@@ -85,7 +86,11 @@ public class ReadNotes : MonoBehaviour
         cam.GetComponent<MouseLook>().enabled = true;
         player.GetComponent<FootSteps>().enabled = true;
         Cursor.visible = false;
-        gunny.GetComponent<GunSystem>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        if (inventoryGun.activeInHierarchy)
+        {
+            gunny.GetComponent<GunSystem>().enabled = true;
+        }
 
     }
 }

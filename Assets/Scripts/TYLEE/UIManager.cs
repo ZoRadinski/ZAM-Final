@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public GameObject gameOverMenu;
 
-    public GameObject player;
+    public GameObject cam;
 
     
 
@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
         gameOverMenu.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        player.GetComponent<MouseLook>().enabled = false;
+        cam.GetComponent<MouseLook>().enabled = false;
     }
     public void RestartLevel()
     {

@@ -4794,6 +4794,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 142650225999344510, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2748047017149956234, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4843,6 +4847,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5728933494628774923, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5728933494628774923, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.09
       objectReference: {fileID: 0}
@@ -4864,7 +4872,7 @@ PrefabInstance:
       objectReference: {fileID: 218149651}
     - target: {fileID: 5728933496719538407, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: distance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5728933496719538407, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: gunScript

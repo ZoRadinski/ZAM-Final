@@ -11,7 +11,7 @@ public class EnemyDamage : MonoBehaviour
     public float minDamage;
     public float maxDamage;
 
-    
+
 
     public GameObject gotHit;
     // Start is called before the first frame update
@@ -20,38 +20,42 @@ public class EnemyDamage : MonoBehaviour
         damageRange = Random.Range(minDamage, maxDamage);
     }
 
-     void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             player.GetComponent<PlayerHealth>().health -= damageRange;
             gotHurt();
-            
+
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gotHit != null)
+        if (gotHit != null)
         {
-           if (gotHit.GetComponent<Image>().color.a > 0 )
+            if (gotHit.GetComponent<Image>().color.a > 0)
             {
                 var color = gotHit.GetComponent<Image>().color;
                 color.a -= 0.01f;
 
                 gotHit.GetComponent<Image>().color = color;
             }
-            
+
         }
     }
     void gotHurt()
     {
         var color = gotHit.GetComponent<Image>().color;
-        color.a = 0.8f;
+        color.a = 1f;
 
+        gotHit.SetActive(true);
         gotHit.GetComponent<Image>().color = color;
     }
 
-
+    void OnTriggerExit(Collider other)
+    {
+        gotHit.SetActive(false);
+    }
 }

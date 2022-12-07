@@ -11,6 +11,8 @@ public class winaf : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("Winner");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

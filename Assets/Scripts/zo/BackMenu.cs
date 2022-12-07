@@ -8,5 +8,7 @@ public class BackMenu : MonoBehaviour
     {
 
         SceneManager.LoadScene("MainMenu");
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

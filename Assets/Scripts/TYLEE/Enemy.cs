@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
             en.GetComponent<CapsuleCollider>().enabled = false;
             en.GetComponent<BoxCollider>().enabled = false;
             GetComponent<BoxCollider>().enabled = false;
+            GetComponent<CapsuleCollider>().enabled = false;
             Die();
         }
         else

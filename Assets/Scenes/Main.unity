@@ -4748,15 +4748,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 142650225999344505, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -76.52
+      value: -96
       objectReference: {fileID: 0}
     - target: {fileID: 142650225999344505, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.905
+      value: 7.64
       objectReference: {fileID: 0}
     - target: {fileID: 142650225999344505, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -47.8
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 142650225999344505, guid: c4150f3e4d738694d8881592f32ec61f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6369,6 +6369,10 @@ PrefabInstance:
     - target: {fileID: 4628563723066386650, guid: 2175c44b5c3bb8a4dbf768c48fc25f28, type: 3}
       propertyPath: m_Name
       value: Cell Door with KP
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628563723066386650, guid: 2175c44b5c3bb8a4dbf768c48fc25f28, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 4628563723066386652, guid: 2175c44b5c3bb8a4dbf768c48fc25f28, type: 3}
       propertyPath: m_RootOrder
@@ -17513,6 +17517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'BF Right Door '
       objectReference: {fileID: 0}
+    - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
+      propertyPath: m_TagString
+      value: Doors
+      objectReference: {fileID: 0}
     - target: {fileID: 1638665761684188817, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Controller
       value: 
@@ -17675,6 +17683,10 @@ PrefabInstance:
     - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Name
       value: TF Right Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 1638665761684188817, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Controller
@@ -19705,7 +19717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503303615552151394, guid: 9323d1976d8e9c441952f715538111e8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7503303615552151394, guid: 9323d1976d8e9c441952f715538111e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19717,7 +19729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503303615552151394, guid: 9323d1976d8e9c441952f715538111e8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -69.97209
+      value: -60.11
       objectReference: {fileID: 0}
     - target: {fileID: 7503303615552151394, guid: 9323d1976d8e9c441952f715538111e8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19755,6 +19767,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 531926297}
+    - target: {fileID: 8046718257339480242, guid: 9323d1976d8e9c441952f715538111e8, type: 3}
+      propertyPath: m_Height
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8046718257339480242, guid: 9323d1976d8e9c441952f715538111e8, type: 3}
       propertyPath: m_ObstacleAvoidanceType
       value: 4
@@ -22851,6 +22867,10 @@ PrefabInstance:
     - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Name
       value: Top Hall Way Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 1638665761684188817, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Controller
@@ -26975,6 +26995,10 @@ PrefabInstance:
     - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Name
       value: 'Bot Hall Way Door '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 1638665761684188817, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Controller
@@ -32777,6 +32801,10 @@ PrefabInstance:
     - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Name
       value: 'BF Left Door '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 1638665761684188817, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Controller
@@ -38845,6 +38873,10 @@ PrefabInstance:
     - target: {fileID: 8535889839902178842, guid: 65519027c484b1640abf26f554dc2272, type: 3}
       propertyPath: m_Name
       value: TF Cell with KP
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535889839902178842, guid: 65519027c484b1640abf26f554dc2272, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 8535889839902178844, guid: 65519027c484b1640abf26f554dc2272, type: 3}
       propertyPath: m_RootOrder
@@ -45137,6 +45169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TF Left Door
       objectReference: {fileID: 0}
+    - target: {fileID: 1638665761684188816, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
+      propertyPath: m_TagString
+      value: Doors
+      objectReference: {fileID: 0}
     - target: {fileID: 1638665761684188817, guid: 834ab2ba040604944a7ff5097ba2c3b0, type: 3}
       propertyPath: m_Controller
       value: 
@@ -45847,22 +45883,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9713caa71d112724f98137aea114e4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &2108066655
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  animator: {fileID: 2108066657}
+  distance: 2
+  currentHitObject: {fileID: 0}
+--- !u!95 &2108066657 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4521959508009682200, guid: 9323d1976d8e9c441952f715538111e8, type: 3}
+  m_PrefabInstance: {fileID: 875014301}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108066645}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &2108584766
 PrefabInstance:
   m_ObjectHideFlags: 0

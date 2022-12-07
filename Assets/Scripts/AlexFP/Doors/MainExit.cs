@@ -107,6 +107,5 @@ public class MainExit : MonoBehaviour
     public void logic()
     {
         Destroy(keyPadOB);
-        gunny.GetComponent<GunSystem>().enabled = false;
     }
 }

@@ -12,7 +12,7 @@ public class Keypad : MonoBehaviour
     public GameObject canvas;
     public GameObject inventory;
     public GameObject Cam;
-    public GameObject TurnOff;
+    public GameObject gunny;
 
     public AudioSource buttonSound;
     public AudioSource correctSound;
@@ -75,6 +75,7 @@ public class Keypad : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cam.GetComponent<MouseLook>().enabled = true;
         player.GetComponent<FootSteps>().enabled = true;
+        gunny.GetComponent<GunSystem>().enabled = true;
     }
 
     public void Update()
@@ -96,11 +97,13 @@ public class Keypad : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             Cam.GetComponent<MouseLook>().enabled = false;
+            gunny.GetComponent<GunSystem>().enabled = false;
         }
     }
 
     public void logic()
     {
         Destroy(keyPadOB);
+        gunny.GetComponent<GunSystem>().enabled = false;
     }
 }

@@ -12,6 +12,7 @@ public class MainExit : MonoBehaviour
     public GameObject canvas;
     public GameObject inventory;
     public GameObject Cam;
+    public GameObject gunny;
 
     public GameObject animatOBRight;
     public Animator aniRight;
@@ -76,6 +77,7 @@ public class MainExit : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         Cam.GetComponent<MouseLook>().enabled = true;
+        gunny.GetComponent<GunSystem>().enabled = true;
     }
 
     public void Update()
@@ -96,6 +98,13 @@ public class MainExit : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             Cam.GetComponent<MouseLook>().enabled = false;
+            gunny.GetComponent<GunSystem>().enabled = false;
         }
+    }
+    
+    public void logic()
+    {
+        Destroy(keyPadOB);
+        gunny.GetComponent<GunSystem>().enabled = false;
     }
 }

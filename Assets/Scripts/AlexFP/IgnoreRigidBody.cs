@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class IgnoreRigidBody : MonoBehaviour
 {
-    public Rigidbody player;
 
     private void Start()
     {
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            player.GetComponent<Collider>().enabled = false;
-        }
-    }
+            Rigidbody rbdy = collision.gameObject.GetComponent<Rigidbody>();
+            rbdy.velocity = Vector3.zero;
 
-    private void OnTriggerExit(Collider other)
-    {
-        
+            rbdy.angularVelocity = Vector3.zero;
+        }
     }
 }

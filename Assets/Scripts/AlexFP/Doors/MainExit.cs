@@ -85,6 +85,8 @@ public class MainExit : MonoBehaviour
         if (textOB.text == "Right")
         {
             openGateSound.Play();
+            Exit();
+            logic();
             aniRight.GetComponent<Animator>().SetTrigger("Activate");
             aniLeft.GetComponent<Animator>().SetTrigger("Activate");
         }

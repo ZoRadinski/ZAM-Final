@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Alex.unity
     guid: 8804d29f088280548b0bd688ef13cc50
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Intro.unity
     guid: 71b390fe906812c4f93d8c92eb12b7b3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 6595b399b74a86a4993fd1339f5bdbea
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AfterPlayScene.unity
     guid: 190d2854c7572a04b80f664427cca327
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cinematic.unity
     guid: b388172d9eee28a4c9fa93085c5f1494
   - enabled: 1
@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/NotTylee.unity
     guid: 735b1aa2ba50e31478cc744196442877
+  - enabled: 1
+    path: Assets/Scenes/Winner.unity
+    guid: c38eab8418778cf489e1adfa2ae7e1f0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 17a87c3309454f548ad2a2b87442ee84, type: 2}

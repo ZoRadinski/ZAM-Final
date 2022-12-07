@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class winaf : MonoBehaviour
 {
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.CompareTag("Player"))
+        if (other.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("Winner");
         }
